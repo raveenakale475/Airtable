@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtable </title>
+    <link rel="icon" href="https://iconape.com/wp-content/files/gk/370524/svg/airtable-logo-icon-png-svg.png"/>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="signup.css" />
+
+    <style>
+      /* medium screen */
+      @media all and (min-width:481px) and (max-width:761px){
+        #prodcon {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      #scratch{
+        grid-template-columns:  repeat(2,1fr);
+      }
+      }
+
+      @media all and (min-width:320px) and (max-width:480px){
+        #prodcon {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      #scratch{
+        grid-template-columns:  repeat(1,1fr);
+      }
+      }
+    </style>
+</head>
+<body>
+    <div class="container-fluid shadow p-2 mb-3 bg-white rounded" id="con15">
+        <div class="container12 flex-wrap">
+          <div class="row">
+            <div class="col" id="co1umn15">
+              <ul class="nav">
+                <img onclick="home()"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3SK0Ct7p8DgvxyN8Sj3yGmGohmZ7L7etgtcSbKdBn&s"
+                  alt="img1"
+                />
+  
+                <li class="nav-item">
+                  <a href="dashboard.html" class="nav-link text-decoration-underline">Base</a>
+                </li>
+                <li class="nav-item">
+                  <a href="dashboard.html" class="nav-link">Templates</a>
+                </li>
+                <li class="nav-item">
+                  <a href="dashboard.html" class="nav-link">Marketplace </a>
+                </li>
+                <li class="nav-item">
+                  <a href="dashboard.html" class="nav-link">Universe</a>
+                </li>
+              </ul>
+          </div> 
+          <div class="col" id="co2">
+              <ul class="navbar-nav sm-icons"> </ul>
+              <li>
+                  <a class="nav-link" href=""><i class="bi bi-info-circle-fill"></i></a>
+              </li>
+              <li>
+                <a class="nav-link" href=""><i class="bi bi-question-circle-fill"></i></a>
+            </li>
+            <li>
+              <a class="nav-link" href="#"><i class="bi bi-bell-fill"></i></a>
+          </li>
+          <li>
+            <a class="nav-link" href="index.html"><i class="bi bi-person-circle"></i></a>
+        </li>
+              </ul>
+             </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container mt-4" id="prodcon">
+
+        <div id="first">
+          <div class="card" style="width: 18rem;background-color: 
+          #d0f0fc;">
+            <div class="card-body">
+              <h5 class="card-title small">Upgrade to Pro before your trial expires</h5>
+              <h6 class="card-subtitle mb-2 text-muted px">Keep the power you need to manage complex workflows, run reports, and more with tools like:</h6>
+              <p class="card-text px"><i class="bi bi-check-square-fill"></i>Multiple extensions per base</p>
+              <p class="card-text px"><i class="bi bi-check-square-fill"></i>More sync integrations to quickly bring in outside data</p>
+              <p class="card-text px"><i class="bi bi-check-square-fill"></i>More record limits and attachment space</p>
+              <p class="card-text px"><i class="bi bi-check-square-fill"></i>Team permissions</p>
+              <a href="dashboard.html"><button type="button" class="btn btn-primary" style="margin-left:100px;background: rgb(14,2,205);
+              background: linear-gradient(90deg, rgba(14,2,205,1) 0%, rgba(183,95,228,1) 44%, rgba(112,6,200,1) 56%);">Upgrade now</button></a>
+            </div>
+          </div>
+
+         
+          <form action="" class="form inline" id="find">
+            <input
+              type="search"
+              name=""
+              id="input"
+              placeholder="Find a base or interface"
+              class="form-control"
+            />
+           <i class="bi bi-grid-fill rounded-circle" id="bi" ></i> <i class="bi bi-list" id="bi"></i>
+          </form>
+
+         
+
+          <div class="card" style="margin-right:100px;margin-top:10px;border:none;">
+            <div class="card-body">
+             <i class="bi bi-grid-fill"></i>
+               Interfaces
+            </div>
+          </div>
+
+          <div class="card" style="margin-right:100px;border:none;color:grey;">
+            <div class="card-body">
+               WORKSPACES
+            </div>
+          </div>
+
+          <div class="card" style="margin-right:100px;border:none;display:flex;">
+            <div class="card-body">
+              <i class="bi bi-people-fill"></i>
+               My First Workspace <i class="bi bi-stars"></i>Trial
+               <i class="bi bi-grid-3x3-gap-fill" style="margin-left:20px;"></i>
+            </div>
+          </div>
+
+          <div class="card" style="margin-right:100px;border:none;">
+            <div class="card-body">
+              <i class="bi bi-plus"></i>
+               Add a Workspace
+            </div>
+          </div>
+
+          <div class="card" style="margin-right:100px;border:none;">
+            <div class="card-body">
+              <i class="bi bi-trash3-fill"></i>
+               Trash
+            </div>
+          </div>
+      
+          
+        </div>
+
+        <div id="second">
+
+          <div class="card" style="background-color: #efefef;border:none;">
+            <div class="card-body">
+              <i class="bi bi-star-fill"></i>
+              <a href="">Invite your friends and coworkers</a>
+               to earn account credit!  <a href="" style="color:black;margin-left:330px;font-size:15px;">No thanks</a>
+            </div>
+          </div>
+
+          <div class="card" style="border:none;margin-top:20px;">
+            <div class="card-body">
+              <a href="dashboard.html">My First Workspace</a> <i class="bi bi-caret-down-fill"></i><i class="bi bi-stars" style="margin-left:10px;"></i>
+               Pro trial 14 days left <a href="" style="color:black;margin-left:400px;font-size:15px;"><i class="bi bi-person-circle"></i><button id="n" style="background-color:#1ec932;color:white">SHARE</button></a>
+            </div>
+          </div>
+           
+           <div id="scratch">
+          <div class="card" style="width: 18rem;" id="c1">
+            <img class="card-img-top img-fluid" src="https://thumbs.dreamstime.com/b/plus-icon-green-square-button-isolated-abstract-illustration-105988277.jpg" alt="Card image cap" style="width:250px;padding:60px;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Start from scratch</h5>
+              <p class="card-text text-center">Create a new blank base with custom tables, fields, and views.</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;" id="c1">
+            <img class="card-img-top img-fluid" src="https://c.tenor.com/LqmZ23LdL1wAAAAi/up-arrow-symbols.gif" alt="Card image cap" style="width:250px;padding:60px;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Quickly upload</h5>
+              <p class="card-text text-center">Easily migrate your existing projects in just a few minutes.</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;" id="c1">
+            <img class="card-img-top img-fluid" src="https://www.carlsbadusd.k12.ca.us/://cdn.schoolloop.com/uimgcdn/aHR0cDovL2N1c2QtY2Euc2Nob29sbG9vcC5jb20vdWltZy9maWxlLzEyMTg2Nzk3NDg0NjUvMzM2NTAxNTEwODkwODYwMTM3NC5wbmc/MTYxODUyMDMzMjUwMA==" alt="Card image cap" style="width:250px;padding:60px;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Start with templates</h5>
+              <p class="card-text text-center">Select a template to get started and customize as you go.</p>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+       
+
+      </div>
+      </body>
+      </html>
+
+      <script>
+        function home(){
+            window.location="index.html"
+          }
+    </script>
+
+<script src="https://kit.fontawesome.com/24c494a6b6.js"></script>
